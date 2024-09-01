@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data.min.js"></script>
-    
+    <script src="<https://cdn.jsdelivr.net/momentjs/2.24.0/moment.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
-   
+
     <link rel="stylesheet" href="css/style.css" />
 
     <title>World Clock - Christine Nambatya</title>
@@ -15,27 +15,28 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="city">
         <option value="">Select a city...</option>
-        <option value="">London</option>
-        <option value="">Kampala</option>
-        <option value="">Moscow</option>
+        <option value="Europe/London">London</option>
+        <option value="Africa/Kampala">Kampala</option>
+        <option value="Europe/Moscow">Moscow</option>
       </select>
 
-      <div class="city" id="los-angeles">
-        <div>
-          <h2>Los Angeles</h2>
-          <div class="date"></div>
-          August 15th 2024
+      <div class="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small>AM </small></div>
         </div>
-        <div class="time">01:48:15 <small>AM </small></div>
-      </div>
-      <div class="city" id="shanghai">
-        <div>
-          <h2>Shanghai</h2>
-          <div class="date">August 15th 2024</div>
+        <div class="city" id="shanghai">
+          <div>
+            <h2>Shanghai</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small>AM </small></div>
         </div>
-        <div class="time">01:48:15 <small>AM </small></div>
       </div>
     </div>
     <footer>
